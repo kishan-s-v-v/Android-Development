@@ -78,6 +78,14 @@ fun main()
     print("Kishan\n\tKishan\n\t\tKishan\n\t\t\tKishan\n\t\t")
 }
 
+var gem = """
+            kishan
+       Kishan    Kishan
+            Kishan
+    """
+    print(gem)
+
+
 
 
 
