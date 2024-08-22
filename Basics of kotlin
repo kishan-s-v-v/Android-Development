@@ -85,6 +85,61 @@ var gem = """
     """
     print(gem)
 
+# Array data Type
+fun main()
+{
+    //array of integers
+    val numbers = arrayOf(1, 2, 3, 4, 5)
+    //array of strings
+    val words: Array<String> = arrayOf("Kotlin", "Java", "Python")
+    //array of squares using Lambda function
+    val squares = Array(5) {i -> i * i}
+    val firstNumber = numbers[0]
+    	val secondWord = words[1]
+    println("First number: $firstNumber") //first element
+    println("Second word: $secondWord")  //second element
+    
+    // Modifying elements
+
+    numbers[0] = 10      //modify first number
+    words[1] = "Kotlin" //modify second element
+    println("Modified first number: ${numbers[0]}")
+    println("Modified second word: ${words[1]}")
+    //Iterating over arrays
+    //using for loop
+    println("Numbers array using for loop:")
+    for (num in numbers)
+    {
+        println(num)
+    }
+}
+
+// Creating 2D array
+fun main()
+{
+    //creating 2D array(matrix)
+    val matrix: Array<Array<Int>> = arrayOf(arrayOf(1,2,3), arrayOf(4,5,6), arrayOf(7,8,9))
+    println("Element at row 0 column 1: ${matrix[0][1]}")
+}
+
+//Kotlin Data type Conversion
+//Int to Long conversion using toLong
+fun main(args: Array<String>)
+{
+    val x: Int = 100
+    val y: Long = x.toLong()
+    println(y)
+}
+
+//safe and unsafr]e casting
+fun main()
+{
+    val a = "Hi"
+    val b: String = a as String
+    println("Unsafe casting result : $b")
+    val c : Int = a as? Int
+    println("safe casting result : $a")
+}
 
 
 
