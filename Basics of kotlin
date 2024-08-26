@@ -300,6 +300,22 @@ fun main()
     }
     println("Day of the week: $dayname")
 }
+fun main(){
+val age =15
+
+    if(age<13) {
+        println("You are a child.")
+    }
+        else if(age in 13..19){
+            println("you are a teenager")
+        }
+    else if(age in 20..64){
+        println("You are an adult")
+    }
+    else{
+        println("You are a senior")
+    }
+}
 
 fun main()
 {
