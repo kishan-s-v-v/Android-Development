@@ -327,6 +327,111 @@ fun main()
     }
 }
 
+//For loop
+fun main()
+{
+    for(i in 1..5)
+    {
+        println("Numbers: $i")
+    }
+}
+
+fun main()
+{
+    for(i in 1 until 5) // it will not print 5
+    {
+        println("Numbers: $i")
+    }
+}
+
+//Reverse for loop
+fun main(args:Array<String>)
+{
+    for (item in 5 downTo 1)
+    {
+        println(item)
+    }
+}
+
+//Reverse with step size
+fun main(args: Array<String>)
+{
+    for(item in 5 downTo 1 step 2)
+    {
+        println(item)
+    }
+}
+
+//Iterating over a list
+//when only element need to be accessed
+fun main()
+{
+    val fruits = listOf("Apple","Banana","Cherry")
+    for(fruit in fruits)
+    {
+        println(fruit)
+    }
+}
+
+//when both element and index need to be accessed
+fun main()
+{
+    val fruits = listOf("Apple","Banana","Cherry")
+    for(index in fruits.indices)
+    {
+        println("fruit at index $index: ${fruits[index]}")
+    }
+}
+//while loop
+fun main()
+{
+    var i = 5
+    while(i>0){
+        println("value is : $i")
+        i--
+    }
+}
+//do-while loop
+fun main()
+{
+    var i = 5
+    do{
+        println("value is: $i")
+        i--
+    }
+    while(i>5)
+}
+
+fun main()
+{
+    var i=5
+    do{
+        println("value is : $i")
+        i--
+    }
+    while(i>0)
+}
+
+fun main()
+{
+    var i=1
+    do{
+        println("value is : $i")
+        i++
+    }
+    while(i<=5)
+}
+
+//Functions in kotlin - reusable blocks of code that perform a specific task
+fun demo()
+{
+    println("Hello, World!")
+}
+fun main(args: Array<String>)
+{
+    demo()
+    println("Bye")
+}
 
 
 
